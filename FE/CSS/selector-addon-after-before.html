@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector addon Before After in CSS</title>
+</head>
+
+<body>
+    <style>
+        h2::before {
+            content: "Before";
+            color: green;
+        }
+
+        h2::after {
+            content: "After";
+            color: yellow;
+        }
+
+        li a::after {
+            content: url("https://www.clipartmax.com/png/small/63-632826_abgs-stella-angry-birds-2-stella.png");
+        }
+    </style>
+    <h1>Selector addon Before After in CSS</h1>
+    <h2>Selector Addon</h2>
+    <ul type="none">
+        <li><a href="">Item 1</a></li>
+        <li><a href="">Item 2</a></li>
+        <li><a href="">Item 3</a></li>
+        <li><a href="">Item 4</a></li>
+        <li><a href="">Item 5</a></li>
+    </ul>
+</body>
+
+</html>
