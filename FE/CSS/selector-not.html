@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector not in CSS</title>
+</head>
+
+<body>
+    <style>
+        #wrapper :not(p) {
+            color: #f00;
+        }
+
+        :not(.active) {
+            color: green;
+        }
+    </style>
+    <div id="wrapper">
+        <h1>Selector not in CSS</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident similique nam minus vero quam possimus
+            sed earum veritatis ducimus molestiae?</p>
+        <p>Quas maxime nostrum iusto quisquam doloribus sunt fuga tempore dignissimos, sint quia. Sit, officia nulla cum
+            esse possimus aut qui?</p>
+        <a href="">Google.com</a>
+        <p>Velit id accusamus expedita consequuntur at asperiores earum vero magni cupiditate pariatur officiis
+            explicabo quaerat laborum, adipisci, vel, sapiente molestias!</p>
+        <p class="active">Distinctio et harum quisquam ducimus molestiae ab voluptatem minima, aliquid culpa dolorem.
+            Nihil quae, modi
+            quasi tempora quos hic aliquid!</p>
+        <ul>
+            <li><a href="">Item 1</a></li>
+            <li><a href="">Item 2</a></li>
+        </ul>
+        <p>Libero quos voluptate excepturi non ab neque vel a officiis veritatis iure omnis ea, dicta rerum earum.
+            Explicabo, excepturi? Repellat?</p>
+
+    </div>
+
+</body>
+
+</html>
