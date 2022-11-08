@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display block in CSS</title>
+</head>
+
+<body>
+    <style>
+        #wrapper {
+            width: 960px;
+            margin: 0px auto;
+        }
+
+        .link-group a {
+            display: block;
+            float: left;
+            background-color: red;
+            padding: 10px 20px;
+            border: 1px solid white;
+        }
+
+        .link-group a:hover {
+            background-color: rgb(202, 199, 34);
+        }
+    </style>
+    <div id="wrapper">
+        <h1>Display Block in CSS</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum magnam molestiae placeat aut libero. Ipsa rem
+            repellat eum reiciendis dignissimos.</p>
+        <div class="link-group">
+            <a href="">Link 1</a>
+            <a href="">Link 2</a>
+            <a href="">Link 3</a>
+            <a href="">Link 4</a>
+            <a href="">Link 5</a>
+        </div>
+    </div>
+</body>
+
+</html>
