@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Flex order in CSS</title>
+</head>
+
+<body>
+    <style>
+        .container {
+            width: 1170px;
+            margin: 0px auto;
+            display: flex;
+            flex-direction: row;
+            background-color: gray;
+        }
+
+        .flex-item {
+            background-color: green;
+            color: white;
+            padding: 50px;
+            margin: 10px;
+        }
+
+        .item-1 {
+            order: 1;
+        }
+
+        .item-2 {
+            order: -1;
+        }
+
+        .item-3 {
+            order: 10;
+        }
+    </style>
+    <h1>Display Flex Order in CSS</h1>
+    <div class="container">
+        <div class="flex-item item-1">1</div>
+        <div class="flex-item item-2">2</div>
+        <div class="flex-item item-3">3</div>
+        <div class="flex-item item-4">4</div>
+        <div class="flex-item item-5">5</div>
+    </div>
+</body>
+
+</html>
