@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position absolute in CSS</title>
+</head>
+
+<body>
+    <style>
+        .box-parent {
+            width: 500px;
+            height: 200px;
+            position: relative;
+            background-color: #25ce1f;
+        }
+
+        .box-child {
+            position: absolute;
+            top: 10px;
+            left: 30px;
+            background-color: #555;
+            color: #fff;
+        }
+    </style>
+    <h1>Position absolute in CSS</h1>
+    <div class="box-parent">
+        <div class="box-child">
+            Box child
+        </div>
+    </div>
+</body>
+
+</html>
