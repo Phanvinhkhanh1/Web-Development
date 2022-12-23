@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For-in in Js</title>
+</head>
+
+<body>
+    <script>
+        let object = {
+            "fullname": "Phan Vinh Khanh",
+            "age": 25,
+            "job": "Web Developer"
+        };
+
+        for (let key in object) {
+            document.write(key + " : " + object[key] + "<br/>");
+        }
+
+        let myArray = [1, 2, 3, 4, 5];
+        for (let key in myArray) {
+            document.write(key + " : " + myArray[key] + "<br/>");
+        }
+    </script>
+</body>
+
+</html>
