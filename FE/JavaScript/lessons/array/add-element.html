@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add element in JavaScript</title>
+</head>
+
+<body>
+    <script>
+        let listNumbers = [1, 2, 4, 6, 7, 8, -1, 0, 3];
+        let evenNumbers = [];
+        for (let element of listNumbers) {
+            if (element % 2 == 0) {
+                evenNumbers.push(element);
+            }
+        }
+
+        document.write(evenNumbers);
+    </script>
+</body>
+
+</html>
