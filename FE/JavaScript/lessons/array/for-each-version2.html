@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update values of array with for-each in JS</title>
+</head>
+
+<body>
+    <script>
+        let listNumbers = [1, 2, 34, 5, 7, -2, 4, 5, 7, 8, 9, 100];
+        listNumbers.forEach(function (currentValue, index, array) {
+            array[index] = currentValue * 10;
+        });
+
+        listNumbers.forEach(element => document.write(element + " <br/>"));
+    </script>
+</body>
+
+</html>
