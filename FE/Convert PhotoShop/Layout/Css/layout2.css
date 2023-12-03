@@ -1,0 +1,28 @@
+body {
+    font-size: 20px;
+    line-height: auto;
+}
+
+#wrapper {
+    width: 1366px;
+    margin: 0px auto;
+}
+
+#header {
+    background-color: #0073aa;
+    color: #e2e9ef;
+    text-transform: uppercase;
+    padding: 23px 0px;
+}
+
+#content {
+    min-height: 668px;
+    background-color: #f4f4f4;
+    margin: 0px auto;
+}
+
+#footer {
+    background-color: #232323;
+    color: #f8f8f8;
+    padding: 10px 0px;
+}
