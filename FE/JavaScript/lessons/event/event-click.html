@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event double click in HTML</title>
+</head>
+
+<body>
+    <h1>Event double click</h1>
+    <button id="btnClick">Double click me</button>
+    <script>
+        const btnElement = document.getElementById('btnClick');
+        btnElement.addEventListener('dblclick', function (e) {
+            console.log(e);
+            alert('Double click me');
+        });
+    </script>
+</body>
+
+</html>
