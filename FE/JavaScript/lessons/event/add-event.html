@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add event for element</title>
+</head>
+
+<body>
+    <h1>Add event to HTML</h1>
+
+    <!-- Cách 1: Inline -->
+    <!-- <button id="btn" onclick="show()">Click me</button> -->
+    <button id="btn">Click me</button>
+
+
+    <script>
+        function show() {
+            alert('Click : 1st way');
+        }
+
+        // Cách 2: JS
+        // const btnElement = document.getElementById('btn');
+        // btnElement.onclick = function () {
+        //     alert('Click : 2nd way');
+        // }
+
+        // Cách 3 : JS addEventListener
+        const btnElement = document.getElementById('btn');
+        btnElement.addEventListener('click', function () {
+            alert('Click : 3rd way with 1st event');
+        })
+        btnElement.addEventListener('click', function () {
+            alert('Click : 3rd way with 2nd event');
+        })
+    </script>
+</body>
+
+</html>
