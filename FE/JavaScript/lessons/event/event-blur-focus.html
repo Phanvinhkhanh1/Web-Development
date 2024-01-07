@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event blur and focus in HTML</title>
+</head>
+
+<body>
+    <h1>Event blur-focus in HTML</h1>
+    <form action="" id="register">
+        <fieldset>
+            <legend>Register form</legend>
+            <label for="username">Username</label><br>
+            <input type="text" id="username" autocomplete="off"><br />
+            <label for="password">Password</label><br>
+            <input type="password" id="password" autocomplete="off"><br />
+            <label for="city">Cities</label><br>
+            <select name="" id="city">
+                <option value="">--Chọn--</option>
+                <option value="1">Hà Nội</option>
+                <option value="2">Hồ Chí Minh</option>
+                <option value="3">Đà Nẵng</option>
+                <option value="4">Cần Thơ</option>
+                <option value="5">Hà Tĩnh</option>
+            </select>
+            <br />
+            <br />
+            <input type="submit" value="Login now">
+        </fieldset>
+    </form>
+    <script>
+        const usernameElement = document.getElementById('username');
+        usernameElement.addEventListener('focus', function () {
+            console.log('Focus in element');
+        });
+        usernameElement.addEventListener('blur', function () {
+            console.log('Out focus in Element');
+        });
+    </script>
+</body>
+
+</html>
