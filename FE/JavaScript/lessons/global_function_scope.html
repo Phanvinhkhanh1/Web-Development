@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global and Function scope variable in JS</title>
+</head>
+<body>
+    <script>
+        var x = 100;
+        function test() {
+            x = 200;
+            var y = 500;
+            document.write(y);
+        }
+
+        test();
+        document.write(x);
+    </script>
+</body>
+</html>
