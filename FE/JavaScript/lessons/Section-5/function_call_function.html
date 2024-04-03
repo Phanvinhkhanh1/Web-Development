@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function call Function in JS</title>
+</head>
+<body>
+    <script>
+        function checkEven(n) {
+            if (n % 2 == 0) {
+                return true;
+            }
+            return false;
+        }
+
+        function sumOfEven(n) {
+            let result = 0;
+            for (let i = 0; i <= n;i ++) {
+                if (checkEven(i)) {
+                    result += i;
+                }
+            }
+            
+            return result;
+        }
+
+        document.write(sumOfEven(10));
+    </script>
+</body>
+</html>
