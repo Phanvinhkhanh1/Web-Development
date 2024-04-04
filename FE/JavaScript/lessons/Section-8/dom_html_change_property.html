@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Change Property</title>
+</head>
+<body>
+    <img id="demo" class="property" src="images/images.jpeg" alt="Information"/>
+    <script>
+        const demo = document.getElementById("demo");
+        // Element.attr
+        demo.alt = "China images";
+        console.log(demo.alt);
+    </script>
+</body>
+</html>
