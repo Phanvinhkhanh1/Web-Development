@@ -9,12 +9,14 @@
 </head>
 
 <body>
-    <div id="user" data-username="Phan Vinh Khanh" data-date-of-birth="12/16/1997"></div>
+    <div id="user" data-username="Phan Vinh Khanh" data-date-of-birth="12/16/1997" data-age="27"
+    data-position="director"></div>
     <script>
         const user = document.getElementById("user");
         console.log(user.dataset.username);
         console.log(user.dataset.dateOfBirth);
         delete user.dataset.dateOfBirth;
+        user.dataset.position = "Chairman";
         console.log(user.dataset);
     </script>
 </body>
