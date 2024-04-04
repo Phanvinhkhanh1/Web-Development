@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Element With classList</title>
+</head>
+
+<body>
+    <!-- <h1 id="demo" class="class-1 class-2"></h1> -->
+    <h1 id="demo">Text-1</h1>
+    <script>
+        const demo = document.getElementById("demo");
+        // demo.classList.add('class-Khanh');
+        // demo.classList.remove('class-2');
+        // demo.classList.replace('class-1', 'show');
+        demo.classList.toggle('open');
+        console.log(demo.classList);
+    </script>
+</body>
+
+</html>
