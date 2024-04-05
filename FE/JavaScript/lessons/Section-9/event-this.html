@@ -12,6 +12,8 @@
     <script>
         const h1Element = document.querySelector('h1');
         h1Element.addEventListener('click', function () {
+            console.log(this);
+            console.log(this.innerText);
             this.innerText = 'Clicked';
             this.parentNode.style.background = 'yellow';
         });
