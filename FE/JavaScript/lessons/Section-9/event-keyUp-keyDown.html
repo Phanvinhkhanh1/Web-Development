@@ -32,8 +32,9 @@
     </form>
     <script>
         const usernameElement = document.getElementById('username');
-        usernameElement.addEventListener('keyup', function () {
+        usernameElement.addEventListener('keyup', function (e) {
             console.log(username.value);
+            console.log(e.which);
         });
         usernameElement.addEventListener('keydown', function () {
             console.log(username.value);
