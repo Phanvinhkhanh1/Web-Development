@@ -34,9 +34,11 @@
         const usernameElement = document.getElementById('username');
         usernameElement.addEventListener('focus', function () {
             console.log('Focus in element');
+            console.log("Focus value : " + usernameElement.value);
         });
         usernameElement.addEventListener('blur', function () {
             console.log('Out focus in Element');
+            console.log("Blur value : " + usernameElement.value);
         });
     </script>
 </body>
