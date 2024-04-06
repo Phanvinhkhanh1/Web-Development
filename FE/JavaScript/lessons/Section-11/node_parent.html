@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node Parent in DOM</title>
+</head>
+
+<body>
+    <h1>Node Parent</h1>
+    <a href="">Learn Programming with JS</a>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quaerat nulla, eum animi ratione numquam
+        reprehenderit at, esse accusamus maiores culpa debitis ut cupiditate possimus quae aliquid eligendi. Perferendis
+        voluptates sed ab illum, placeat, temporibus non alias veritatis totam architecto libero nulla vel rem
+        recusandae quo veniam neque ex qui eius, eveniet beatae est numquam blanditiis. Ut quasi molestiae soluta sequi
+        facere odit placeat. Iusto animi doloremque recusandae esse odio voluptatibus facere veritatis, illo magni?
+        Vitae a quia tempora, accusantium optio magnam rerum corrupti facilis culpa! Provident, quas, debitis dolorum
+        placeat iure itaque repellendus, similique deserunt distinctio odit deleniti mollitia?</p>
+    <ul id="main-menu">
+        <li>
+            <a href="">
+                Item-1
+            </a>
+            <ul class="sub-menu">
+                <li><a href="">Item 1.1</a></li>
+                <li><a href="">Item 1.2</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="">
+                Item-2
+            </a>
+        </li>
+        <li>
+            <a href="">
+                Item-3
+            </a>
+        </li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis itaque cum modi eaque aliquam reprehenderit,
+        placeat nulla qui inventore sit. Quaerat magnam esse cum quas exercitationem sint, nemo eius dolores minima vel
+        sit enim expedita facere incidunt voluptatem adipisci quos voluptatibus, doloribus libero! Cupiditate culpa
+        alias tenetur, maxime ipsam nostrum.</p>
+    <script>
+        const subMenu = document.querySelector('.sub-menu');
+        console.log(subMenu.parentNode);
+        console.log(subMenu.parentElement);
+
+        const aElement = document.querySelector('.sub-menu li a');
+        console.log(aElement.parentElement.parentElement);
+
+        aElement.closest('#main-menu').style.background = 'green';
+    </script>
+</body>
+
+</html>

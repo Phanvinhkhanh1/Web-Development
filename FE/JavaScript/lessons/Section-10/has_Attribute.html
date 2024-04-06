@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HasAttribute in DOM</title>
+</head>
+
+<body>
+    <a href="" title="Demo title" count="1998">JS Beginner</a>
+    <div id="result"></div>
+    <script>
+        const aElement = document.querySelector('a');
+        if (aElement.hasAttribute('count')) {
+            console.log(aElement.getAttribute('count'));
+            document.getElementById('result').innerHTML = `Count : ${aElement.getAttribute('count')}`;
+        }
+    </script>
+</body>
+
+</html>
