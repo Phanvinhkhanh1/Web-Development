@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replace Element in DOM</title>
+</head>
+
+<body>
+    <h1>Replace Element in DOM</h1>
+    <style>
+        .current {
+            color: red;
+        }
+    </style>
+    <ul id="menu">
+        <li>PHP</li>
+        <li class="current">JavaScript</li>
+        <li>Java</li>
+    </ul>
+    <script>
+        const menu = document.getElementById('menu');
+        const current = document.querySelector('li.current');
+
+        const newLi = document.createElement('li');
+        newLi.textContent = 'GoLang';
+
+        menu.replaceChild(newLi, current);
+    </script>
+</body>
+
+</html>
