@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone Element in DOM</title>
+</head>
+
+<body>
+    <h1>Clone Element in DOM</h1>
+    <style>
+        .current {
+            color: red;
+        }
+    </style>
+    <ul id="menu">
+        <li><a href="">Home</a></li>
+        <li class="current"><a href="">Course</a>
+            <ul class="sub-menu">
+                <li><a href="">PHP</a></li>
+                <li><a href="">C++</a></li>
+            </ul>
+        </li>
+    </ul>
+    <script>
+        const menu = document.getElementById('menu');
+        const current = document.querySelector('.current');
+
+        const cloneCurrent = current.cloneNode(true);
+        menu.appendChild(cloneCurrent);
+    </script>
+</body>
+
+</html>
